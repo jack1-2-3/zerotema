@@ -9,7 +9,7 @@
         />
         <title>lp</title>
         <link rel="stylesheet" type="text/css" href="./assets/css/reset.css" />
-        <link rel="stylesheet" type="text/css" href="./assets/css/common.css" />
+        <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
         <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
         <link
             rel="stylesheet"
@@ -18,6 +18,9 @@
     </head>
 
     <body>
+        <div id="loader">
+            <img src="assets/img/loader.png" alt="Now Loading..." />
+        </div>
         <div class="wrapper">
             <header class="pc">
                 <div class="header_inner">
@@ -1139,51 +1142,57 @@
             </footer>
             <!-- Footer -->
         </div>
+        <!-- jQuery -->
+        <script
+            src="https://code.jquery.com/jquery-3.2.1.js"
+            integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+            crossorigin="anonymous"
+        ></script>
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <script src="assets/js/loader.js"></script>
+        <script>
+            $(function () {
+                // $('.nav_toggle').on('click', function () {
+                //     if ($('.sp_menu_view').css('display') == 'block') {
+                //         $('.sp_menu_view').hide();
+                //     } else {
+                //         $('.sp_menu_view').show();
+                //     }
+                // });
+
+                // $('.link_text').on('click', function () {
+                //     $('.sp_menu_view').hide();
+                // });
+
+                var mySwiper = new Swiper('.swiper-container', {
+                    // Optional parameters
+                    direction: 'horizontal',
+                    loop: true,
+
+                    // If we need pagination
+                    pagination: {
+                        el: '.swiper-pagination',
+                    },
+
+                    // Navigation arrows
+                    navigation: {
+                        nextEl: '.swiper-button-next',
+                        prevEl: '.swiper-button-prev',
+                    },
+
+                    // And if we need scrollbar
+                    scrollbar: {
+                        el: '.swiper-scrollbar',
+                    },
+                });
+                // $(window).scroll(function () {
+                //     if ($('.swiper-container').height() < $(this).scrollTop()) {
+                //         $('header').css('background-color', '#E2FC78');
+                //     } else {
+                //         $('header').css('background-color', 'inherit');
+                //     }
+                // });
+            });
+        </script>
     </body>
-    <script src="./assets/js/common/jquery.min.js"></script>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script>
-        $(function () {
-            $('.nav_toggle').on('click', function () {
-                if ($('.sp_menu_view').css('display') == 'block') {
-                    $('.sp_menu_view').hide();
-                } else {
-                    $('.sp_menu_view').show();
-                }
-            });
-
-            $('.link_text').on('click', function () {
-                $('.sp_menu_view').hide();
-            });
-
-            var mySwiper = new Swiper('.swiper-container', {
-                // Optional parameters
-                direction: 'horizontal',
-                loop: true,
-
-                // If we need pagination
-                pagination: {
-                    el: '.swiper-pagination',
-                },
-
-                // Navigation arrows
-                navigation: {
-                    nextEl: '.swiper-button-next',
-                    prevEl: '.swiper-button-prev',
-                },
-
-                // And if we need scrollbar
-                scrollbar: {
-                    el: '.swiper-scrollbar',
-                },
-            });
-            $(window).scroll(function () {
-                if ($('.swiper-container').height() < $(this).scrollTop()) {
-                    $('header').css('background-color', '#E2FC78');
-                } else {
-                    $('header').css('background-color', 'inherit');
-                }
-            });
-        });
-    </script>
 </html>

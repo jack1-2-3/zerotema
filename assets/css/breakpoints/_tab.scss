@@ -1,0 +1,355 @@
+@media all and (max-width: 767px) {
+    .pc {
+        display: none !important;
+    }
+
+    .sp {
+        display: block !important;
+    }
+
+    header {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 9px 18px;
+    }
+
+    /**********************************/
+
+    .second_view {
+        h2 {
+            font-size: 25px;
+            margin: 0 0 40px 30px;
+            padding-top: 54px;
+        }
+
+        .box_portal {
+            width: 100%;
+        }
+
+        .portal-list {
+            display: block;
+            text-align: center;
+        }
+
+        .box_portal {
+            &::after {
+                width: 90%;
+                height: 100%;
+            }
+
+            .label {
+                display: none;
+            }
+        }
+
+        .hiyoko,
+        .usagi,
+        .panda,
+        .garu {
+            width: 80%;
+        }
+
+        .hiyoko-text,
+        .usagi-text,
+        .panda-text,
+        .garu-text {
+            top: 0;
+            width: 50px;
+        }
+
+        .box_portal_inner {
+            width: 250px;
+            margin: auto auto 31px;
+
+            &:last-child {
+                padding-bottom: 30px;
+            }
+        }
+    }
+
+    /**********************************/
+
+    .third_view {
+        .li-item {
+            height: 105vw;
+        }
+
+        .item-inner {
+            height: 100%;
+        }
+
+        .item-content {
+            z-index: 1;
+            top: 59%;
+            left: 20px;
+        }
+    }
+
+    /**********************************/
+
+    .fourth_view_wrapper {
+        margin: 82px auto 0 auto;
+        max-width: 550px;
+    }
+
+    .fourth_view {
+        .fourth_text_content p {
+            font-size: 18px;
+            line-height: 37px;
+        }
+
+        .fourth_img {
+            max-width: 200px;
+            margin: 73px auto 108px auto;
+        }
+    }
+
+    /**********************************/
+
+    .fifth_view .fifth_text_content {
+        font-size: 18px;
+        line-height: 36px;
+        text-align: center;
+        margin: 81px 45px 0 45px;
+        margin: 81px 40px 0 40px;
+    }
+
+    /**********************************/
+
+    .merit-wrapper {
+        margin: 0 auto;
+        max-width: 600px;
+    }
+
+    .sixth_view {
+        .merit_img {
+            margin-top: 40px;
+            margin-left: 0;
+        }
+
+        h3 {
+            margin-top: 16px;
+            margin-left: 0px;
+            font-size: 28px;
+        }
+
+        .sixth_text_content {
+            margin-top: 32px;
+            margin-left: 0;
+            max-width: 600px;
+
+            p {
+                font-size: 15px;
+                line-height: 25px;
+                margin-left: 0;
+            }
+        }
+
+        .img_box_mgl .before_img {
+            margin-top: 32px;
+        }
+
+        .img_box .red_text {
+            font-size: 22px;
+            line-height: 30px;
+            margin: 22px 55px;
+        }
+
+        .inner_box {
+            margin: 106px 20px 0 20px;
+        }
+
+        .merit_content {
+            .merit_box {
+                margin-bottom: 31px;
+
+                p {
+                    margin-left: 18px;
+                    font-size: 22px;
+                    line-height: 33px;
+                    margin-bottom: 0px;
+                }
+
+                img {
+                    max-width: 61px;
+                }
+            }
+
+            .point_text {
+                margin-left: 0;
+                font-size: 15px;
+                margin: 0 auto;
+                max-width: 400px;
+                margin-bottom: 18px;
+                line-height: 25px;
+            }
+
+            .sphone {
+                width: 75%;
+                margin-bottom: 65px;
+            }
+        }
+
+        .recommend_content {
+            margin: 60px 20px 0 20px;
+
+            p {
+                margin-left: 12px;
+                font-size: 16px;
+                line-height: 22px;
+            }
+        }
+    }
+
+    /**********************************/
+
+    .seventh_view {
+        padding: 20px;
+
+        .inner_box {
+            margin: 0 auto;
+            padding-top: 31px;
+            padding-bottom: 60px;
+
+            .img_box_service {
+                text-align: center;
+                padding-top: 31px;
+            }
+
+            .how_to_start {
+                margin-top: 26px;
+                margin-bottom: 25px;
+                font-size: 28px;
+            }
+
+            .step {
+                display: block;
+                text-align: center;
+                margin-bottom: 68px;
+            }
+
+            .start_free {
+                margin-bottom: 32px;
+            }
+        }
+
+        .recommend_content p {
+            font-size: 16px;
+            margin-right: 24px;
+            margin-left: 12px;
+        }
+
+        .inner_box .plan_detail {
+            display: block;
+            padding: 0;
+            margin-bottom: 33px;
+
+            .plan_box {
+                display: block;
+                width: 100%;
+                margin: 0 auto;
+                margin-bottom: 20px;
+            }
+        }
+
+        .function {
+            margin: 0;
+            padding: 0px;
+            display: block;
+            width: 100%;
+            margin: 0 auto;
+
+            img {
+                width: 100%;
+                margin: 0;
+                padding: 0px;
+                margin-bottom: 18px;
+            }
+        }
+
+        .recommend_content {
+            margin-top: 80px;
+        }
+    }
+
+    /**********************************/
+
+    .eighth_view {
+        .example_img {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .img_box p {
+            margin-top: 16px;
+            margin-left: 0;
+            font-size: 28px;
+            text-align: center;
+        }
+
+        .case-list {
+            margin: 28px 29px 52px 29px;
+        }
+
+        .case-item {
+            display: block;
+
+            img {
+                margin-bottom: 10px;
+            }
+        }
+
+        .case-content {
+            margin: 0;
+        }
+
+        .case-title {
+            display: none;
+        }
+
+        .case-company {
+            margin-bottom: 10px;
+            font-size: 14px;
+        }
+
+        .case-text {
+            font-size: 14px;
+            line-height: 22px;
+        }
+
+        .case-item:last-child picture {
+            margin-left: 0;
+        }
+    }
+
+    /**********************************/
+
+    /**********************************/
+
+    .tenth_view div {
+        margin-top: 32px;
+
+        &.text {
+            margin-top: 37px;
+            margin-bottom: 37px;
+
+            p {
+                font-size: 14px;
+            }
+        }
+    }
+
+    /**********************************/
+
+    footer .copy_right {
+        padding-top: 33px;
+        padding-bottom: 20px;
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 979px) {
+    .sptabOnly {
+        display: block !important;
+    }
+}
