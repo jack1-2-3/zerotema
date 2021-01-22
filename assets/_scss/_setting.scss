@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+// font
+$baseFont: 14px;
+$baseLineHeight: 1.4;
+$baseFontFamily : 'Noto Sans JP', 'Raleway', 'Hiragino Kaku Gothic ProN', sans-serif, "メイリオ", Meiryo, Verdana, sans-serif;
+
+$Black: #2e282a;
+$Grey: #f0f0f0;
+$Red: #d84f3b;
+$White: #ffffff;
+$Blue: #215AB9;
+$Green : #215AB9;
+$Orange : #F39800;
+$FontColor : #464646;
+
+// width
+$baseWidth: 980px;
+$baseWidthWide: 1280px;
+$baseWidthInner: 1100px;
+
+// point
+$bpTabletP: 1100px;// 1100px以下の画面全て
+$bpPcSm: 1024px;
+$bpTabletL: 979px;
+$bpTabletPO: 835px;//iPad Pro 10.5　834x1112の縦基準
+
+$bpSphoneL: 568px;//iPhone5 320x568の横基準
+$bpSphone7: 375px;//iPhone6 375x667の縦基準
+$bpSphoneSE: 320px;//iPhone5 320x568の縦基準
