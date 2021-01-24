@@ -2185,19 +2185,7 @@ footer .copy_right {
   }
 }
 
-@media only screen and (max-width: 979px) {
-  .sptabOnly {
-    display: block !important;
-  }
-}
-
 @media (max-width: 1025px) {
-  .pc-1025 {
-    display: none !important;
-  }
-  .sp-1025 {
-    display: block !important;
-  }
   header .header_inner a {
     font-size: 11px;
     margin: 0 5px;
@@ -2289,15 +2277,6 @@ footer .copy_right {
     margin-top: 16px;
     margin-bottom: 14px;
     font-size: 20px;
-  }
-}
-
-@media only screen and (max-width: 1100px) {
-  .pcTabOnly {
-    display: none !important;
-  }
-  .spOnly {
-    display: block !important;
   }
 }
 
