@@ -11,5 +11,3 @@ const mySwiper = new Swiper('.swiper-container', {
         el: '.swiper-pagination',
     },
 });
-
-mySwiper.autoplay.start();

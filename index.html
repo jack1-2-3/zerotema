@@ -1,15 +1,11 @@
 <!DOCTYPE html>
-<html lang="jp">
+<html lang="ja">
     <head>
-        <meta charset="utf-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-        <meta
-            name="viewport"
-            content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1"
-        />
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>lp</title>
-        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
         <link rel="stylesheet" type="text/css" href="./assets/css/reset.css" />
+        <link rel="stylesheet" href="assets/css/vendor/swiper.min.css" />
         <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
     </head>
 
@@ -18,34 +14,28 @@
             <img src="assets/img/loader.png" alt="Now Loading..." />
         </div>
         <div class="wrapper">
-            <header class="pc">
+            <header class="header">
                 <div class="header_inner">
                     <img src="assets/img/lp_zerotema_small.png" />
                     <div class="header_menu">
-                        <a href="#customer_acquisition">お悩みの声</a>
-                        <a href="#merit">ZEROテマとは</a>
-                        <a href="#service">サービス料金</a>
-                        <a href="#example">お客様の声</a>
-                        <a href="#" class="zerotema"
-                            ><img src="assets/img/lp_pc.png" /> ０円から始める</a
-                        >
+                        <a class="js_header-link" href="#customer_acquisition">お悩みの声</a>
+                        <a class="js_header-link" href="#merit">ZEROテマとは</a>
+                        <a class="js_header-link" href="#service">サービス料金</a>
+                        <a class="js_header-link" href="#example">お客様の声</a>
+                        <div class="zerotema_container">
+                            <p class="sp">親指だけ（スマホ）で自社サイト運用できる！？</p>
+                            <a href="#" class="zerotema js_header-link"
+                                ><img src="assets/img/lp_pc.png" /> ０円から始めてみる</a
+                            >
+                        </div>
                     </div>
                 </div>
-            </header>
-            <header class="sp">
-                <div class="header_inner">
-                    <img src="assets/img/lp_zerotema_small.png" />
-                    <div class="header_menu">
-                        <a href="#customer_acquisition">お悩みの声</a>
-                        <a href="#merit">ZEROテマとは</a>
-                        <a href="#service">サービス料金</a>
-                        <a href="#example">お客様の声</a>
-                        <a href="#" class="zerotema"
-                            ><img src="assets/img/lp_pc.png" /> ０円から始める</a
-                        >
-                    </div>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 </div>
-            </header>
+            </header>   
             <!-- Main -->
             <div class="main-content">
                 <!-- スライダーのメインコンテナの div 要素 -->
@@ -137,7 +127,7 @@
                         初回のお客様ばかりで、、
                     </h2>
 
-                    <ul class="pc">
+                    <ul class="list pc">
                         <li class="li-item item01">
                             <div class="item-inner">
                                 <div class="item-content">
@@ -261,7 +251,7 @@
 					</div>
 				</li> -->
                     </ul>
-                    <ul class="sp">
+                    <ul class="list sp">
                         <li class="li-item item01">
                             <div class="item-inner">
                                 <div class="item-content">
@@ -694,448 +684,10 @@
             <!-- Footer -->
         </div>
 
-        <!--	sp-->
-        <div class="wrapper_sp">
-            <header class="header_sp">
-                <div class="header_inner">
-                    <img src="assets/img/lp_zerotema.png" />
-                    <span class="nav_toggle">
-                        <i></i>
-                        <i></i>
-                        <i></i>
-                    </span>
-                </div>
-            </header>
-            <!-- Main -->
-            <div class="main-content">
-                <div class="sp_menu_view">
-                    <div class="menu_text">
-                        <a class="link_text" href="#customer_acquisition_sp"
-                            ><span>お悩みの声</span></a
-                        >
-                        <a class="link_text" href="#merit_sp"><span>ZEROテマとは</span></a>
-                        <a class="link_text" href="#service_sp"><span>サービス料金</span></a>
-                        <a class="link_text" href="#example_sp"><span>お客様の声</span></a>
-                    </div>
-                    <div class="text">
-                        <p>親指だけ（スマホ）で自社サイト運営できる！？</p>
-                    </div>
-                    <div class="button_box">
-                        <a href="#"
-                            ><img src="assets/img/lp_mail.png" />
-                            <p>0円から始めてみる。</p></a
-                        >
-                    </div>
-                </div>
-                <div class="first_view_sp">
-                    <div>
-                        <h1>
-                            さよなら、<br />
-                            予約サイト
-                        </h1>
-                        <p class="mcho">（ポータルサイト）</p>
-                    </div>
-                    <div class="img_box">
-                        <img src="assets/img/lp_sp_top_sphone.png" class="phone" />
-                    </div>
-                    <div class="text">
-                        <p>親指だけ（スマホ）で自社サイト運営できる！？</p>
-                    </div>
-                    <div class="button_box">
-                        <a href="#"
-                            ><img src="assets/img/lp_mail.png" />
-                            <p>0円から始めてみる。</p></a
-                        >
-                    </div>
-                </div>
-                <div class="white-box"></div>
-                <div class="second_view_sp">
-                    <h2>予約はポータルから<br />自社ホームページの時代へ</h2>
-                    <div class="box_portal">
-                        <div class="box_portal_inner">
-                            <img src="assets/img/lp_hiyoko_left.png" class="hiyoko" />
-                            <img src="assets/img/lp_portal_1.png" class="img_text" />
-                        </div>
-                        <div class="box_portal_inner">
-                            <img src="assets/img/lp_usagi.png" class="usagi" />
-                            <img src="assets/img/lp_portal_2.png" class="img_text" />
-                        </div>
-                        <div class="box_portal_inner">
-                            <img src="assets/img/lp_panda.png" class="panda" />
-                            <img src="assets/img/lp_portal_3.png" class="img_text" />
-                        </div>
-                        <div class="box_portal_inner">
-                            <img src="assets/img/lp_garu.png" class="garu" />
-                            <img src="assets/img/lp_portal_4.png" class="img_text" />
-                        </div>
-                    </div>
-                </div>
-
-                <div class="third_view_sp" id="customer_acquisition_sp">
-                    <img
-                        src="assets/img/lp_customer_acquisition.png"
-                        class="customer_acquisition_img"
-                    />
-                    <h2>
-                        予約サイトに頼りきり。<br />
-                        初回のお客様ばかりで、、
-                    </h2>
-                    <img class="first_img" src="assets/img/lp_sp_first_img.png" />
-                    <img class="second_img" src="assets/img/lp_sp_second_img.png" />
-                    <img class="third_img" src="assets/img/lp_sp_third_img.png" />
-                    <div class="text_content">
-                        <p>今までは、</p>
-                        <p>予約サイトに頼ったり、</p>
-                        <p>ブランディングも</p>
-                        <p>何もやってこなかった。</p>
-                    </div>
-                    <img src="assets/img/lp_sp_hiyoko.png" class="hiyoko" />
-                    <img src="assets/img/lp_usagi_right.png" class="usagi" />
-                    <img src="assets/img/lp_garu.png" class="garu" />
-                    <img src="assets/img/lp_trouble_1.png" class="trouble_1" />
-                    <img src="assets/img/lp_trouble_2.png" class="trouble_2" />
-                    <img src="assets/img/lp_trouble_3.png" class="trouble_3" />
-                    <div class="text_box1">
-                        <h3>
-                            <span>集客できる自信がないんです。</span>
-                            <span>自分でできるものなのですか？</span>
-                        </h3>
-                        <p>
-                            <span> ホームページのことはわからないし、</span><br />
-                            <span>集客をうまくできる自信もない。</span><br />
-                            <span>だけど今、従来の集客が通用しないwithコロナ。</span><br />
-                            <span>わからないと言っている場合ではないのは</span><br />
-                            <span>わかってる。周りもやっているらしいし、</span><br />
-                            <span>やるなら簡単なものから始めたい。</span>
-                        </p>
-                    </div>
-                    <div class="text_box2">
-                        <h3>
-                            <span>人柄とサービスには自信がある！</span><br />
-                            <span>だけど、なかなかリピート</span><br />
-                            <span>には繋がらない。</span>
-                        </h3>
-                        <p>
-                            <span>ファンを作っていける人柄とサービスには</span><br />
-                            <span>自信がある。 でも、現状を見てみると、</span><br />
-                            <span>新規の顧客が半分以上を占めていて、</span><br />
-                            <span>常に新しい顧客を追い続けていかなければ</span><br />
-                            <span>ならないのが経営的にも辛い。</span><br />
-                            <span>ここから脱却する術を手に入れて、</span><br />
-                            <span>大切な顧客の満足度を高めたい。</span>
-                        </p>
-                    </div>
-                    <div class="text_box3">
-                        <h3>
-                            <span>SNS投稿は、やってます！</span><br />
-                            <span>効果は、、わかってません。</span>
-                        </h3>
-                        <p>
-                            <span>
-                                SNSは一応やってるけど、<br />
-                                大きな集客は予約サイトに頼りきり、<br />
-                                初回のお客様ばかりで、手数料も取られる。<br />
-                                2回目来てくれても予約サイトから。<br />
-                                もちろん手数料を取られるんです。
-                            </span>
-                        </p>
-                    </div>
-                </div>
-                <!-- <div class="fourth_view_sp">
-				<div class="fourth_text_content">
-					<p>終わらないwithコロナの影響。<br>
-						減る集客。変わらない予約サイトの<br>
-						維持費、ホームページにかかる費用。<br>
-						知らないから消耗し続けるって嫌だ。<br>
-						今の予約サイトだけでは<br>
-						集客も満足していません。<br>
-					</p>
-				</div>
-				<div class="fourth_text_content2">
-					<p>これからは自分たちで少しでも管理して、魅力を発信する時。<br>
-						ホームページを0円でもち、ブランドの価値を伝えたい。<br>
-						ZEROテマが叶えてくれました。<br>
-					</p>
-				</div>
-				<div class="fourth_img">
-					<img src="assets/img/lp_zerotema.png">
-				</div>
-				<img src="assets/img/lp_usagi.png" class="usagi">
-				<img src="assets/img/lp_car.png" class="car">
-				<img src="assets/img/lp_hiyoko2.png" class="hiyoko">
-				<img src="assets/img/lp_panda.png" class="panda">
-				<img src="assets/img/lp_bike.png" class="bike">
-				<img src="assets/img/lp_garu.png" class="garu">
-				<img src="assets/img/lp_plain.png" class="plain">
-			</div> -->
-
-                <div class="fifth_view_sp">
-                    <div class="fifth_text_content">
-                        <p>
-                            簡単にスタートできるZEROテマで<br />
-                            自社ホームページを持ってみる？
-                        </p>
-                    </div>
-                    <div class="button_box">
-                        <a href="#"
-                            ><img src="assets/img/lp_mail.png" />
-                            <p>0円から始めてみる。</p></a
-                        >
-                    </div>
-                </div>
-
-                <div class="sixth_view_sp" id="merit_sp">
-                    <img class="merit_img" src="assets/img/lp_merit.png" />
-                    <h3>
-                        自社の魅力を<br />
-                        しっかりと伝える。
-                    </h3>
-                    <div class="sixth_text_content">
-                        <p>
-                            ZEROテマは、自社のホームページを0円で<br />
-                            モテるサービスになります。<br />
-                            ウェブマーケッターの集団が作ったファン<br />
-                            マーケティングができるホームページに<br />
-                            なっているので、自社のブランドを<br />
-                            ポータルに求めることなく、自社の<br />
-                            魅力の発信でき、ファン（優良顧客）を<br />
-                            増やすことができます。
-                        </p>
-                    </div>
-                    <div class="img_box">
-                        <img class="before_img" src="assets/img/lp_sp_before.png" />
-                    </div>
-                    <div class="img_box">
-                        <p class="red_text">
-                            毎回手数料を取られるのが<br />
-                            普通になっていませんか？
-                        </p>
-                    </div>
-                    <div class="img_box">
-                        <img src="assets/img/lp_triangle.png" class="triangle" />
-                    </div>
-                    <div class="img_box">
-                        <img class="after_img" src="assets/img/lp_sp_after.png" />
-                    </div>
-                    <div class="approach">
-                        <p>
-                            予約サイトを通さずに<br />
-                            既存顧客（ファン）へのアプローチ
-                        </p>
-                    </div>
-                    <div class="inner_box">
-                        <div class="merit_box">
-                            <img src="assets/img/lp_merit_1.png" />
-                            <p>
-                                業者に頼まず、<br />
-                                ホームページが持てる
-                            </p>
-                        </div>
-                        <p class="point_text">
-                            初期費用・月額料金が無料でホームページ<br />
-                            が作れます。 制作会社に依頼せずに、<br />
-                            親指一つ（スマホ）で、いつでも自分で<br />
-                            簡単に編集可能。
-                        </p>
-                        <img class="sphone" src="assets/img/lp_spimg_merit_1.png" />
-
-                        <div class="merit_box mgt-50">
-                            <img src="assets/img/lp_merit_2.png" />
-                            <p>
-                                ブログで集客できる<br />
-                                って知ってる？
-                            </p>
-                        </div>
-                        <p class="point_text">
-                            ブログの機能で店舗の最新情報を発信。<br />
-                            自社ホームページ を育てて、SEO対策。<br />
-                            上位表示のコツは他社サイトで頑張る<br />
-                            のでなく、自社ホームページのブログ機能。
-                        </p>
-                        <img class="sphone" src="assets/img/lp_spimg_merit_2.png" />
-
-                        <div class="merit_box mgt-50">
-                            <img src="assets/img/lp_merit_3.png" />
-                            <p>
-                                直接予約の方が<br />
-                                良いに決まっている！
-                            </p>
-                        </div>
-                        <p class="point_text">
-                            毎回予約サイトに手数料を払っていま<br />
-                            せんか？従来はポータルサイトで予約が<br />
-                            当たり前でした。自社のホームページで<br />
-                            完結できるようにしましょう。
-                        </p>
-                        <img class="sphone" src="assets/img/lp_spimg_merit_3.png" />
-
-                        <div class="merit_box mgt-50">
-                            <img src="assets/img/lp_merit_4.png" />
-                            <p>
-                                リピーターを増やす<br />
-                                試作はできてますか？
-                            </p>
-                        </div>
-                        <p class="point_text p-15">
-                            カルテのように、来店したお客様の履歴が<br />
-                            更新できます。お客様と共有できるので、<br />
-                            リピート率向上、満足度UPが見込めます。
-                        </p>
-                        <img class="sphone" src="assets/img/lp_sphone.png" />
-                    </div>
-                    <div class="recommend_content">
-                        <img src="assets/img/lp_hiyoko.png" />
-                        <p>
-                            簡単にスタートできる<br />
-                            ZEROテマで自社ホームページ<br />
-                            を持ってみる？
-                        </p>
-                    </div>
-                    <div class="recommend_button">
-                        <a href="#"
-                            ><img src="assets/img/lp_mail.png" />
-                            <p>0円から始めてみる。</p></a
-                        >
-                    </div>
-                </div>
-                <!-- <div class="seventh_view_sp" id="service_sp">
-				<div class="inner_box">
-					<div class="img_box">
-						<img class="service_introduction" src="assets/img/lp_service.png">
-					</div>
-					<div class="how_to_start">
-						<p>サービスの始め方♪</p>
-					</div>
-					<div class="step">
-						<div class="img_box">
-							<img class="step_img" src="assets/img/lp_sp_step.png">
-							<p class="account">アカウント作成</p>
-							<p class="basic-info">基本情報設定</p>
-							<p class="last">ご利用開始！</p>
-						</div>
-					</div>
-					<div class="start_free">
-						<img src="assets/img/lp_start_free.png">
-					</div>
-					<div class="plan_detail">
-						<div class="plan_box">
-							<img src="assets/img/lp_sp_plan_a.png">
-						</div>
-						<div class="plan_box">
-							<img src="assets/img/lp_sp_plan_b.png">
-						</div>
-						<div class="plan_box">
-							<img src="assets/img/lp_sp_plan_c.png">
-						</div>
-						<div class="plan_box">
-							<img src="assets/img/lp_sp_plan_d.png">
-						</div>
-					</div>
-					<div class="plan_function">
-						<img src="assets/img/lp_sp_home_page.png">
-						<img src="assets/img/lp_sp_blog.png">
-						<img src="assets/img/lp_sp_domein.png">
-						<img src="assets/img/lp_sp_reserve.png">
-						<img src="assets/img/lp_sp_chart.png">
-					</div>
-					<div class="recommend_content">
-						<img src="assets/img/lp_garu.png">
-						<p>
-							重量課金がない方が良い。<br>
-							努力は自社のホームページ<br>
-							に蓄積しよう。
-						</p>
-					</div>
-					<div class="recommend_button">
-						<a href="#"><img src="assets/img/lp_mail.png"><p>0円から始めてみる。</p></a>
-					</div>
-					<div class="box_two">
-
-					</div>
-				</div>
-			</div> -->
-                <!-- <div class="eighth_view_sp" id="example_sp">
-				<div class="img_box">
-					<img class="example_img" src="assets/img/lp_example.png">
-					<p>
-						ZEROテマを<br>
-						導入した店舗
-					</p>
-				</div>
-				<div class="image_content_box">
-					<h2>
-						<span>「いつもので」は正直、</span><br>
-						<span>困っていました。。。</span>
-					</h2>
-					<img src="assets/img/lp_hair.png">
-					<p class="back_black"><span>V美容室様（東京都渋谷区）</span></p>
-					<p class="example_text">
-						お客様から「いつもの髪型で」と言われて、今までは思い出せずに、気まずくなったり、困っていました。
-						ZEROテマを導入後は、カルテ機能を用いて、今までの髪型をお客様と一緒に確認できるので、顧客満足度の向上につながりました。
-					</p>
-				</div>
-				<div class="image_content_box">
-					<h2>
-						<span>予約サイトの手数料を毎回払う</span><br>
-						<span>のがバカバカくなっていた</span>
-					</h2>
-					<img src="assets/img/lp_foot.png">
-					<p class="back_black"><span>K整骨院（神奈川県茅ヶ崎市）</span></p>
-					<p class="example_text">
-						今までは当たり前のように、予約サイトに頼っていました。
-						しかし、ZEROテマに出会ってから、自社で集客・予約管理ができるので、無駄な経費をかけずに自社完結ができるようになりました。
-					</p>
-				</div>
-			</div> -->
-                <!-- <div class="ninth_view_sp">
-				<div class="upper_box">
-					<img src="assets/img/lp_panda.png" class="panda">
-					<img src="assets/img/lp_usagi.png" class="usagi">
-					<img src="assets/img/lp_hiyoko2.png" class="hiyoko">
-					<img src="assets/img/lp_car.png" class="car">
-					<img src="assets/img/lp_bike.png" class="bike">
-					<img src="assets/img/lp_garu.png" class="garu">
-					<img src="assets/img/lp_plain.png" class="plain">
-				</div>
-				<div class="under_box">
-					<p>
-						予約サイトに頼らず、集客や予約管理、<br>
-						リピーター率向上を店舗様で完結できる<br>
-						サービスがZEROテマです。<br>
-						無駄な経費を削減し、本当に大切な<br>
-						お客様に時間とお金を使って<br>
-						いただければと思います。<br>
-						まずは0円で、気軽に使ってみてください。<br>
-						ZEROテマが前面サポート<br>
-						させていただきます。<br>
-					</p>
-
-				</div>
-				<div class="button_box">
-					<a href="#"><img src="assets/img/lp_mail.png"><p>0円から始めてみる。</p></a>
-				</div>
-			</div> -->
-                <!-- <div class="tenth_view_sp">
-				<div>
-					<img src="assets/img/lp_zerotema.png">
-				</div>
-				<div class="text">
-					<p>BIGUP株式会社　　https://big-up.co.jp/ </p>
-				</div>
-			</div> -->
-            </div>
-            <!-- Main -->
-
-            <!-- Footer -->
-            <footer>
-                <div class="copy_right">
-                    <p>&copy;2020 BIGUP Co., Ltd.</p>
-                </div>
-            </footer>
-            <!-- Footer -->
         </div>
         <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
         <script src="assets/js/loader.js"></script>
         <script src="assets/js/slider.js"></script>
+        <script src="assets/js/main.js"></script>
     </body>
 </html>

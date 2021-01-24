@@ -1,4 +1,89 @@
 @media all and (max-width: 596px) {
+    .header {
+        top: 0px;
+        z-index: 9999;
+        font-family: 'Hiragino Kaku Gothic ProN';
+        font-weight: 600;
+        display: flex;
+        flex-direction: row !important;
+        padding-top: 0;
+        padding-bottom: 0;
+        .header_inner {
+            background-image: url(../img/lp_bk_first_view.png);
+            background-color: #fff;
+            background-position:  left top;
+            background-repeat: no-repeat;
+            background-size: cover;
+            transform: translateX(110%);
+            flex-direction: column;
+            transition: 0.5s;
+            width: 100% !important;
+            padding-top: 45px;
+            padding-bottom: 58px;
+            padding-left: 20px;
+            &.open {
+                transform: none;
+            }
+            
+            img {
+                width: 50%;
+                margin-left: 0;
+                align-self: start;
+            }
+            .header_top {
+                img {
+                    width: 50%;
+                }
+            }
+            .header_menu {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-self: start;
+                a {
+                    background-color: white;
+                    display: inline-block;
+                    margin-top: 20px;
+                    margin-right: 0;
+                    width: 120px;
+                }
+                .zerotema_container {
+                    margin: 50% 15%;
+                    // position: absolute;
+                    // bottom: -50%;
+                    // left: 50%;
+                    // transform: translate(-50%, -50%);
+                    width: 100%;
+                    p {
+                        width: 100%;
+                        font-size: 13px;
+                        text-align: center;
+                    }
+                    .zerotema {
+                        display: -ms-flexbox;
+                        width: 100%;
+                        height: 43px;
+                    }
+                }
+            }
+        }
+        .hamburger {
+            position: fixed;
+            top: 8%;
+            right: 10%;
+            display: flex;
+            flex-direction: column;
+            z-index: 100;
+            span + span {
+                margin-top: 12px;
+            }
+            span {
+                width: 40px;
+                display: inline-block;
+                border-top: 2px black solid;
+            }
+        }
+    }
     .fourth_view_wrapper {
         margin-left: 40px;
         margin-right: 40px;
