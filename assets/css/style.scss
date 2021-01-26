@@ -247,98 +247,6 @@ th {
     padding: 0;
 }
 
-/*================================================================================
-  FileName: _module.scss
-  ================================================================================*/
-
-.spOnly,
-.sptabOnly {
-    display: none !important;
-}
-
-.pcOnly,
-.pcTabOnly {
-    display: block !important;
-}
-
-.js-fade {
-    opacity: 0;
-    transition: all 0.7s;
-    transform: translateY(20px);
-}
-
-.js-fadeIn {
-    opacity: 1;
-    transform: translateY(0px);
-}
-
-.chkboxStyle:checked + label span:after {
-    animation: checkAnime 0.1s forwards;
-    animation-delay: 0.25s;
-}
-
-.radioStyle:checked + label span:after {
-    animation: radioAnime 0.1s forwards;
-}
-
-.chkboxStyle:checked + label span:before {
-    animation: checkboxAnime 0.5s forwards;
-}
-
-@keyframes checkboxAnime {
-    0% {
-        transform: scale(1);
-    }
-
-    33% {
-        transform: scale(0.85);
-    }
-
-    100% {
-        transform: scale(1);
-        border: solid #000 2px;
-    }
-}
-
-@keyframes checkAnime {
-    0% {
-        width: 0;
-        height: 0;
-        border-color: #000;
-        transform: translate3d(0, 0, 0) rotate(-45deg);
-    }
-
-    33% {
-        width: 0;
-        height: 4px;
-        border-color: #000;
-        transform: translate3d(0, 0, 0) rotate(-45deg);
-    }
-
-    100% {
-        width: 10px;
-        height: 4px;
-        border-color: #000;
-        transform: translate3d(0, -2px, 0) rotate(-45deg);
-    }
-}
-
-@keyframes radioAnime {
-    0% {
-        height: 0;
-        width: 0;
-    }
-
-    100% {
-        height: 11px;
-        width: 11px;
-    }
-}
-
-html {
-    font-family: 'HIragino  Kaku Gothic Std';
-}
-
 /*---------  main  ---------*/
 
 .wrapper {
@@ -507,7 +415,7 @@ footer {
 /*---------  lp  ---------*/
 
 .header {
-    width: 100%;
+    width: 100vw;
     z-index: 300;
     position: fixed;
     top: 0px;
@@ -515,6 +423,7 @@ footer {
     font-weight: 600;
     padding-top: 58px;
     padding-bottom: 58px;
+    animation: headerShow 1s ease;
 
     .header_menu {
         display: -ms-flexbox;
@@ -579,12 +488,29 @@ footer {
     }
 }
 
-.fist_view {
+.first_view {
     background: url('../../assets/img/lp_bk_first_view.png');
     height: auto !important;
     background-position: left top;
     background-repeat: no-repeat;
     background-size: cover;
+
+    &.js_swiper-active {
+        .half_box {
+            .box_text {
+                transform: none;
+                opacity: 1;
+                transition: 0.6s cubic-bezier(0.215, 0.61, 0.355, 1) 0.8s;
+
+            }
+            .box_sp {
+                opacity: 1;
+                transform: none;
+                transition: 0.6s cubic-bezier(0.215, 0.61, 0.355, 1) 0.4s;
+
+            }
+        }
+    }
 
     .half_box {
         display: -ms-flexbox;
@@ -597,9 +523,18 @@ footer {
         padding-left: 15px;
         padding-right: 15px;
 
+        .box_text {
+            opacity: 0;
+            transform: translateX(-50%);
+            transition: 0.6s cubic-bezier(0.215, 0.61, 0.355, 1) 0.8s;
+        }
+
         .box_sp {
             /* margin-left:164px; */
             margin-left: 5vw;
+            opacity: 0;
+            transform: translateX(50%);
+            transition: 0.6s cubic-bezier(0.215, 0.61, 0.355, 1) 0.4s;
         }
 
         .garu {
@@ -650,13 +585,31 @@ footer {
     .box_portal-wrapper {
         position: relative;
         z-index: 1;
+        overflow: hidden;
     }
 
     .box_portal {
         width: 75vw;
         margin: 0 50px 0 auto;
         padding: 65px 0 0;
+        overflow: hidden;
 
+        &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0%;
+            width: 86%;
+            height: 29vw;
+            background-color: #fff;
+            opacity: 0.8;
+            z-index: -1;
+            transition: 1s;
+            transform: translateX(100%);
+        }
+        &.js_scroll-active::after {
+            transform: none;
+        }
     }
 
     .hiyoko,
@@ -690,20 +643,6 @@ footer {
         top: -50px;
     }
 
-    .box_portal::after {
-        position: absolute;
-        top: 0;
-        right: 0;
-        content: '';
-        width: 86%;
-        height: 29vw;
-        background-color: #fff;
-        opacity: 0.8;
-        z-index: -1;
-        -webkit-transition: right 0.4s cubic-bezier(0.165, 0.84, 0.44, 1) 0.7s;
-        transition: right 0.4s cubic-bezier(0.165, 0.84, 0.44, 1) 0.7s;
-    }
-
     .portal-list {
         display: -webkit-box;
         display: flex;
@@ -712,6 +651,7 @@ footer {
         justify-content: space-around;
         -webkit-box-align: normal;
         align-items: normal;
+        overflow: hidden;
     }
 
     .box_portal .label {
@@ -721,6 +661,18 @@ footer {
     .box_portal_inner {
         margin-top: auto;
         position: relative;
+        opacity: 0;
+        transform: translateY(100px);
+
+        &.js_scroll-active {
+            animation: BottomIn 1s cubic-bezier(0.215, 0.61, 0.355, 1) forwards;
+
+            @for $i from 1 through 10 {
+                &:nth-child(#{$i}) {
+                    animation-delay: $i * 0.3s;
+                }
+            }
+        }
 
         .label {
             margin-top: 15px;
@@ -1010,6 +962,14 @@ footer {
         margin-right: 40px;
     }
 
+    .merit_title {
+        opacity: 0;
+        transform: translateY(100px);
+        &.js_scroll-active {
+            animation: BottomIn 1s cubic-bezier(0.785, 0.135, 0.15, 0.86) forwards;
+        }
+    }
+
     .merit_img {
         margin-left: 95px;
         margin-top: 66px;
@@ -1053,6 +1013,12 @@ footer {
         max-width: 1320px;
         text-align: center;
         margin: 0 auto;
+        opacity: 0;
+        transform: translateY(100px);
+
+        &.js_scroll-active {
+            animation: BottomIn 1s cubic-bezier(0.785, 0.135, 0.15, 0.86) forwards;
+        }
 
         .before_img {
             margin-top: 100px;
@@ -1096,6 +1062,18 @@ footer {
         .sphone {
             display: block;
             margin: 0 auto;
+            opacity: 0;
+            transform: translateY(100px);
+
+            &.js_scroll-active {
+                animation: BottomIn 1s cubic-bezier(0.785, 0.135, 0.15, 0.86) forwards;
+
+                @for $i from 1 through 10 {
+                    &:nth-child(#{$i}) {
+                        animation-delay: $i * 0.3s;
+                    }
+                }
+            }
         }
     }
 
@@ -1194,6 +1172,18 @@ footer {
                 display: flex;
                 -ms-flex-pack: center;
                 justify-content: center;
+                opacity: 0;
+                transform: translateY(100px);
+
+                &.js_scroll-active {
+                    animation: BottomIn 1s cubic-bezier(0.215, 0.61, 0.355, 1) forwards;
+
+                    @for $i from 1 through 10 {
+                        &:nth-child(#{$i}) {
+                            animation-delay: $i * 0.2s;
+                        }
+                    }
+                }
 
                 img {
                     width: 100%;
@@ -1215,6 +1205,17 @@ footer {
             width: 50%;
             padding: 5px;
             box-sizing: border-box;
+            opacity: 0;
+            transform: translateY(100px);
+
+            &.js_scroll-active {
+                animation: BottomIn 1s cubic-bezier(0.215, 0.61, 0.355, 1) forwards;
+                @for $i from 1 through 10 {
+                    &:nth-child(#{$i}) {
+                        animation-delay: $i * 0.2s;
+                    }
+                }
+            }
         }
     }
 
@@ -1319,6 +1320,18 @@ footer {
         -webkit-box-align: normal;
         align-items: normal;
         margin-top: 97px;
+        opacity: 0;
+        transform: translateY(100px);
+
+        &.js_scroll-active {
+            animation: BottomIn 1s cubic-bezier(0.215, 0.61, 0.355, 1) forwards;
+
+            @for $i from 1 through 10 {
+                &:nth-child(#{$i}) {
+                    animation-delay: $i * 0.2s;
+                }
+            }
+        }
     }
 
     .case-content {
@@ -1374,9 +1387,16 @@ footer {
 
 .ninth_view {
     background-color: #e2fc77;
-
+    
+    
     .half_box {
         display: flex;
+        opacity: 0;
+        transform: translateY(100px);
+
+        &.js_scroll-active {
+            animation: BottomIn 1s cubic-bezier(0.215, 0.61, 0.355, 1) forwards;
+        }
 
         /* margin:160px 203px 180px 215px; */
         margin: 160px auto 180px auto;
@@ -1474,6 +1494,6 @@ footer {
     width: 100%;
 }
 @import 'animation/keyframe';
-@import 'breakpoints/sp';
-@import 'breakpoints/tab';
 @import 'breakpoints/pc';
+@import 'breakpoints/tab';
+@import 'breakpoints/sp';

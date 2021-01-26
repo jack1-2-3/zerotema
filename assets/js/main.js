@@ -12,3 +12,24 @@ headerLinks.forEach((link) => {
         mobMenu.classList.remove('open');
     });
 });
+
+// scroll observer
+window.addEventListener('DOMContentLoaded', function () {
+    
+    new ScrollObserver('.js_scroll', function (el, inview) {
+        if (inview) {
+            el.classList.add('js_scroll-active');
+        }
+    });
+    // new ScrollObserver(
+    //     '.js_scroll-infinite',
+    //     function (el, inview) {
+    //         if (inview) {
+    //             el.classList.add('js_scroll-active');
+    //         } else {
+    //             el.classList.remove('js_scroll-active');
+    //         }
+    //     },
+    //     { once: false }
+    // );
+});

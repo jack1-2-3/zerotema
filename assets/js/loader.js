@@ -4,5 +4,5 @@ window.addEventListener('DOMContentLoaded', function () {
     setTimeout(() => {
         loader.style.display = 'none';
         wrapper.style.display = 'block';
-    }, 0);
+    }, 3000);
 });

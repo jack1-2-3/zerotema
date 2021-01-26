@@ -1,51 +1,20 @@
 @media all and (max-width: 596px) {
     .header {
-        top: 0px;
-        z-index: 9999;
-        font-family: 'Hiragino Kaku Gothic ProN';
-        font-weight: 600;
-        display: flex;
-        flex-direction: row !important;
-        padding-top: 0;
-        padding-bottom: 0;
         .header_inner {
-            background-image: url(../img/lp_bk_first_view.png);
-            background-color: #fff;
-            background-position:  left top;
-            background-repeat: no-repeat;
-            background-size: cover;
-            transform: translateX(110%);
-            flex-direction: column;
-            transition: 0.5s;
-            width: 100% !important;
-            padding-top: 45px;
+            padding-top: 60px;
             padding-bottom: 58px;
             padding-left: 20px;
+            overflow: hidden;
             &.open {
                 transform: none;
             }
             
-            img {
-                width: 50%;
-                margin-left: 0;
-                align-self: start;
-            }
-            .header_top {
-                img {
-                    width: 50%;
-                }
-            }
             .header_menu {
-                display: flex;
-                flex-direction: column;
-                justify-content: space-between;
-                align-self: start;
                 a {
-                    background-color: white;
-                    display: inline-block;
-                    margin-top: 20px;
+                    margin-top: 25px;
                     margin-right: 0;
-                    width: 120px;
+                    width: 150px;
+                    font-size: 20px;
                 }
                 .zerotema_container {
                     margin: 50% 15%;
@@ -56,7 +25,7 @@
                     width: 100%;
                     p {
                         width: 100%;
-                        font-size: 13px;
+                        font-size: 12px;
                         text-align: center;
                     }
                     .zerotema {
