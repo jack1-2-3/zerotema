@@ -138,23 +138,19 @@
 
 @keyframes visualBgRightOut {
     50% {
-        -webkit-transform: scale(1.4) skew(35deg, 0deg) translate(50vw);
-        transform: scale(1.4) skew(35deg, 0deg) translate(50vw);
+        transform: scale(1.4) skew(35deg, 0deg) translate(50%);
     }
     to {
-        -webkit-transform: scale(1) skew(0deg, 0deg) translate(100vw);
-        transform: scale(1) skew(0deg, 0deg) translate(100vw);
+        transform: scale(1) skew(0deg, 0deg) translate(150%);
     }
 }
 
 @keyframes visualBgLeftOut {
     50% {
-        -webkit-transform: scale(1.4) skew(-35deg, 0deg) translate(-50vw);
-        transform: scale(1.4) skew(-35deg, 0deg) translate(-50vw);
+        transform: scale(1.4) skew(-35deg, 0deg) translate(-50%);
     }
     to {
-        -webkit-transform: scale(1) skew(0deg, 0deg) translate(-100vw);
-        transform: scale(1) skew(0deg, 0deg) translate(-100vw);
+        transform: scale(1) skew(0deg, 0deg) translate(-150%);
     }
 }
 

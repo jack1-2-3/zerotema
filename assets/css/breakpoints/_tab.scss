@@ -128,6 +128,37 @@
             top: 59%;
             left: 20px;
         }
+
+        .li-item:nth-child(odd) {
+            .item-content {
+                &::after {
+                    content: ' ';
+                    width: 130vw;
+                    height: 150vw;
+                    position: absolute;
+                    background-color: #e2fc77;
+                    -webkit-transform: skew(0deg, -13deg);
+                    transform: skew(0deg, -13deg);
+                    top: -100%;
+                    left: -20%;
+                }
+            }
+        }
+        .li-item:nth-child(even) {
+            .item-content {
+                &::after {
+                    content: ' ';
+                    width: 130vw;
+                    height: 150vw;
+                    position: absolute;
+                    background-color: #e2fc77;
+                    -webkit-transform: skew(0deg, 13deg);
+                    transform: skew(0deg, 13deg);
+                    top: -100%;
+                    right: -20%;
+                }
+            }
+        }
     }
 
     /**********************************/
