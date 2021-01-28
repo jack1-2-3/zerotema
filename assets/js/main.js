@@ -19,4 +19,22 @@ window.addEventListener('DOMContentLoaded', function () {
             el.classList.add('js_scroll-active');
         }
     });
+    new ScrollObserver('.js_swiper', function (el, inview) {
+        if (inview) {
+            const mySwiper = new Swiper('.swiper-container', {
+                // Optional parameters
+                loop: true,
+                effect: 'fade',
+                centeredSlides: true,
+                slidesPerView: 1,
+                autoplay: true,
+                speed: 1000,
+                slideActiveClass: 'js_swiper-active',
+                // If we need pagination
+                pagination: {
+                    el: '.swiper-pagination',
+                }
+            });
+        }
+    });
 });
